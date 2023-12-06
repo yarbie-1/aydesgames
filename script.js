@@ -77,8 +77,3 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keyup', movePacMan);
     setInterval(moveGhosts, 1000); // Move ghosts every second
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    createGrid();
-    document.addEventListener('keyup', movePacMan);
-});
