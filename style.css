@@ -28,3 +28,11 @@ body {
 .dot {
     background-color: white;
 }
+
+.wall {
+    background-color: blue;
+}
+
+.ghost {
+    background-color: red; /* Can add different colors for different ghosts */
+}
