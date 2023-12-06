@@ -1,3 +1,4 @@
+const board = document.getElementById('game-board');
 
 // add walls to the grid
 function addWallsAndGhosts() {
