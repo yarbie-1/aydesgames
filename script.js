@@ -57,15 +57,20 @@ function movePacMan(e) {
 
     if (e.keyCode === 37 && pacManPosition % boardSize !== 0) { // left
         pacManPosition -= 1;
+        eatDot(pacManPosition)
     }
     if (e.keyCode === 38 && pacManPosition - boardSize >= 0) { // up
         pacManPosition -= boardSize;
+        eatDot(pacManPosition)
     }
     if (e.keyCode === 39 && pacManPosition % boardSize < boardSize - 1) { // right
         pacManPosition += 1;
+        eatDot(pacManPosition)
+        
     }
     if (e.keyCode === 40 && pacManPosition + boardSize < boardSize * boardSize) { // down
         pacManPosition += boardSize;
+        eatDot(pacManPosition)
     }
 
     squares[pacManPosition].classList.add('pac-man');
