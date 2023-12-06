@@ -1,5 +1,5 @@
 const board = document.getElementById('game-board');
-
+const walls = [1, 2, 4, 7, 8]; // Array of wall positions
 
 // add walls to the grid
 function addWallsAndGhosts() {
