@@ -1,10 +1,10 @@
 const board = document.getElementById('game-board');
 
+
 // add walls to the grid
 function addWallsAndGhosts() {
     const squares = document.querySelectorAll('.grid-square');
     walls.forEach(index => squares[index].classList.add('wall'));
-    ghostPositions.forEach(index => squares[index].classList.add('ghost'));
 }
 
 // add a dot to a square
